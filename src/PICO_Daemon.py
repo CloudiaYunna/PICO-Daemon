@@ -50,7 +50,7 @@ CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.j
 # 图标按序查找: 优先脚本同目录 (便于整体搬移), 最后回退固定位置
 ICON_CANDIDATES = [
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "PICO Daemon.ico"),
-    "F:/TRAE/PICO Daemon.ico",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "resources", "PICO Daemon.ico"),
 ]
 DEFAULT_PICO_DIR = r"C:/Program Files/PICO Connect"  # 手动定位 PICO Connect 的默认起始目录
 
